@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "predeploy": "flutter build web --web-renderer html",
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
